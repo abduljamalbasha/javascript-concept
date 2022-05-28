@@ -1,5 +1,5 @@
 /**
- * 
+ * Promise
  * @returns 
  */
 
@@ -38,3 +38,4 @@ const callme = async () =>{
 }
 
 callme()
+
