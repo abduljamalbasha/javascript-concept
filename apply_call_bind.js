@@ -9,7 +9,6 @@ const person = {
 person.pirntFunc()
 // output: jamal basha
 
-
 //Call :  function borrow from another funtion
 const person2 = {
     firstname:"abdul",
@@ -22,8 +21,8 @@ person.pirntFunc.call(person2)
 let pirntFunc = function(hometown,state){
     console.log(this.firstname,this.lastname, hometown,state)
 }
-pirntFunc.call(person)
-pirntFunc.call(person2)
+pirntFunc.call(person,"test","test2")
+pirntFunc.call(person2,"test3","test4")
 
 //2nd Approach for call() with parameter
 pirntFunc.call(person,"chennai","TN")
@@ -33,7 +32,8 @@ pirntFunc.call(person2,"vaniyambadi","MU")
 
 pirntFunc.apply(person2,[1,2])
 
-//bind()-  same as call but it will bind into the reference of the object/function and it will keep the copy of the funtion and return it
+//bind()-  same as call but it will bind into the reference of the object/function 
+//and it will keep the copy of the funtion and return it
 
 const bindMethod = pirntFunc.bind(person,"hello","sameera")
 console.log("bindMethod:",bindMethod)

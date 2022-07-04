@@ -47,7 +47,8 @@ console.log(multiLineSting)
 let a1 = 20;
 
 /**
- * Template Literals are literal words in programming that are used to represent some kind of fixed value and template means a blueprint that can generate some entity,
+ * Template Literals are literal words in programming that are used to represent some kind of fixed value 
+ * and template means a blueprint that can generate some entity,
  *  Therefore, the template literals are used to generate strings of a fixed value. These are delimited with the backticks ` `
  */
 
@@ -80,8 +81,10 @@ let a1 = 20;
  //Promise
  const promise = new Promise((resolve,reject)=>{
      resolve("am resolve")
+     reject('am reject')
  }).catch((error)=>{
-    reject("am reject"+error)
+     console.log(error)
+    // reject("am reject"+error)
  })
 
 

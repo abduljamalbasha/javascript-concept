@@ -16,4 +16,17 @@ console.log("unique String:",uniqueString.join())
 //Output :
 // Original String a,b,c,d,a,s,d,f,g,s,d,f,e,a,d,f,r,t,w
 // Duplicate String: a,d,s,d,f,a,d,f
-// unique String: a,b,c,d,s,f,g,e,r,t,w
+// unique String: a,b,c,d,s,f,g,e,r,t,w 
+
+
+// Get Count of duplicate Values
+
+const counts = {};
+// const sampleArray = ['a', 'a', 'b', 'c'];
+const sampleArray = [1,2,3,4,5,3,1,3,2,3,1,7,5,,8,9];
+
+sampleArray.filter(function (x) { 
+    counts[x] = (counts[x] || 0) + 1; 
+});
+
+console.log("counts:",counts)
